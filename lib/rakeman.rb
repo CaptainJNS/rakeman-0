@@ -7,7 +7,7 @@ require_relative 'rakeman/rake_runner'
 
 module Rakeman
   class Manager
-    TASK_REGEX = /^[\w:]+$/
+    TASK_REGEX = /^[\w\[\],:]+$/
 
     include RakePresenter
     include RakeUpdater
